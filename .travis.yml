@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t pohltho/docker-react -f Dockerfile.dev .
+  - docker build -t pohltho/docker-react -f frontend/Dockerfile.dev .
 
 script:
   - docker run -e CI=true pohltho/docker-react npm run test
